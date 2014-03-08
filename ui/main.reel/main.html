@@ -12,13 +12,32 @@
             "properties": {
                 "element": {"#": "main"}
             }
+        },
+        "image": {
+            "prototype": "digit/ui/image.reel",
+            "properties": {
+                "element": {"#": "image"},
+                "axis": "horizontal",
+                "crossOrigin": null
+            }
+        },
+        "slider": {
+            "prototype": "digit/ui/slider.reel",
+            "properties": {
+                "element": {"#": "slider"},
+                "axis": "horizontal",
+                "max": 100,
+                "min": 0,
+                "value": 50
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-
+        <img data-montage-id="image">
+        <div data-montage-id="slider"></div>
     </div>
 </body>
 </html>
